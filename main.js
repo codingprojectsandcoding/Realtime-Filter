@@ -9,7 +9,7 @@ canvas.center();
 video = createCapture(VIDEO);
 video.size(300, 300);
 video.hide();
-poseNet = ml5.poseNet(video);
+poseNet = ml5.poseNet(video, modelLoaded);
 poseNet.on('pose', gotPoses);
 }
 function take_snapshot() {
